@@ -34,7 +34,7 @@ select * from hotel_booking_cleaned
 DELETE FROM SASWATDB.PUBLIC.HOTEL_BOOKING_CLEANED WHERE HOTEL_ID = 0 OR CUSTOMER_ID = 'Unknown';
 
 -- ============================================================
--- LEVEL 1: BASIC (Descriptive)
+-- Descriptive
 -- ============================================================
 
 -- 1. Row count, date range, total revenue
@@ -119,7 +119,7 @@ GROUP BY ROOM_TYPE, CURRENCY
 ORDER BY ROOM_TYPE, CURRENCY;
 
 -- ============================================================
--- LEVEL 3: ADVANCED (Segmentation & Patterns)
+--- Segmentation & Patterns
 -- ============================================================
 
 -- 9. Cancellation & No-Show rate by city (top 10)
@@ -166,7 +166,7 @@ ORDER BY booking_count DESC
 LIMIT 10;
 
 -- ============================================================
--- LEVEL 4: DIFFICULT (Window Functions & Deep Analysis)
+-- Window Functions & Deep Analysis
 -- ============================================================
 
 -- 13. Month-over-month revenue growth (%)
